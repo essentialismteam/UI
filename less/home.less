@@ -1,0 +1,90 @@
+.home{
+    display: flex;
+    flex-direction: column;
+    background-color: @bg-color;
+    
+    .cta-content{
+        margin:20rem 0 5rem 0;
+        display: flex;
+        justify-content: space-between;
+        .cta-img{
+            background-color: gray;
+            border: 1px solid gray;
+            width: 50rem;
+            height: 35rem;
+            margin:0 0 0 10rem;
+        }
+        .cta-text{
+            text-align: end;
+            margin: 5rem 10rem 0 0;
+            h1{
+                margin: 1rem 0;
+                color: white;
+            }
+        }
+        button{
+            .custom-button(24rem, #8eaebd, white);
+            margin-right: 1.5rem;
+        }
+        
+    } // end'cta-content'
+
+    .a-content{
+        //border: 1px solid red;
+        display: flex;
+        img{
+           width: 50rem;
+           height: 35rem; 
+           margin-left: 10rem;
+           background-color: gray;
+           
+        }
+        .a-content-txt{
+            text-align: end;
+            padding-right: 10rem;
+            padding-left: 1rem;
+            padding-top: 5rem;
+            width: 100%;
+            
+        }
+
+    } //end 'a-content';
+
+    .reverse{
+        display: flex;
+        
+        margin-top: 5rem;
+        margin-bottom: 10rem;
+        .reverse-txt{
+            width: 35rem;
+            padding:1rem;
+            margin-left:10rem; 
+            
+        }
+
+        .reverse-img{
+            border: 1px solid gray;
+            width: 50rem;
+            height: 35rem; 
+            margin-right: 10rem;
+            background-color: gray;
+            
+        }
+    }// end 'reverse section'
+
+    .cta-footer{
+        display: flex;
+        justify-content: space-between;
+        padding-left: 9rem;
+
+        h2{
+            font-size: 2rem;
+        }
+
+        .cta-ft-btn{
+            .custom-button(30rem, #233237, white);
+            margin-right: 10rem;
+        }
+    }
+
+}// end 'home container'
