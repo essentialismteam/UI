@@ -262,13 +262,12 @@ footer {
   justify-content: space-between;
 }
 .home .cta-content .cta-img {
-  background-color: gray;
-  border: 1px solid gray;
   width: 50rem;
   height: 35rem;
   margin: 0 0 0 10rem;
 }
 .home .cta-content .cta-text {
+  line-height: 1.75;
   text-align: end;
   margin: 5rem 10rem 0 0;
 }
@@ -287,6 +286,7 @@ footer {
   border-radius: 10px;
   border: 0;
   margin-right: 1.5rem;
+  text-align: end;
 }
 .home .cta-content button:hover {
   background-color: white;
@@ -294,11 +294,13 @@ footer {
 }
 .home .a-content {
   display: flex;
+  justify-content: space-between;
 }
 .home .a-content img {
-  width: 50rem;
+  width: 45rem;
   height: 35rem;
   margin-left: 10rem;
+  margin-right: 10rem;
   background-color: gray;
 }
 .home .a-content .a-content-txt {
@@ -306,7 +308,7 @@ footer {
   padding-right: 10rem;
   padding-left: 1rem;
   padding-top: 5rem;
-  width: 100%;
+  width: 45rem;
 }
 .home .reverse {
   display: flex;
@@ -319,11 +321,9 @@ footer {
   margin-left: 10rem;
 }
 .home .reverse .reverse-img {
-  border: 1px solid gray;
   width: 50rem;
-  height: 35rem;
   margin-right: 10rem;
-  background-color: gray;
+  padding: 1rem;
 }
 .home .cta-footer {
   display: flex;
@@ -407,6 +407,9 @@ footer {
     font-size: 10rem;
     color: #233237;
   }
+  .home .cta-content button {
+    text-align: center;
+  }
   .home .a-content {
     flex-direction: column;
     width: 100%;
@@ -436,7 +439,7 @@ footer {
   }
   .home .reverse .reverse-img {
     width: 25rem;
-    height: 25rem;
+    height: auto;
     margin: auto;
     border: 3px solid white;
     border-radius: 15px;

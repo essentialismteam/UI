@@ -8,13 +8,14 @@
         display: flex;
         justify-content: space-between;
         .cta-img{
-            background-color: gray;
-            border: 1px solid gray;
+            //background-color: gray;
+            //border: 1px solid gray;
             width: 50rem;
             height: 35rem;
             margin:0 0 0 10rem;
         }
         .cta-text{
+            line-height: 1.75;
             text-align: end;
             margin: 5rem 10rem 0 0;
             h1{
@@ -25,6 +26,7 @@
         button{
             .custom-button(24rem, #8eaebd, white);
             margin-right: 1.5rem;
+            text-align: end;
         }
         
     } // end'cta-content'
@@ -32,10 +34,12 @@
     .a-content{
         //border: 1px solid red;
         display: flex;
+        justify-content: space-between;
         img{
-           width: 50rem;
+           width: 45rem;
            height: 35rem; 
            margin-left: 10rem;
+           margin-right: 10rem;
            background-color: gray;
            
         }
@@ -44,7 +48,7 @@
             padding-right: 10rem;
             padding-left: 1rem;
             padding-top: 5rem;
-            width: 100%;
+            width: 45rem;
             
         }
 
@@ -63,11 +67,12 @@
         }
 
         .reverse-img{
-            border: 1px solid gray;
+            //border: 1px solid gray;
             width: 50rem;
-            height: 35rem; 
+            // height: 35rem; 
             margin-right: 10rem;
-            background-color: gray;
+            padding:1rem;
+            //background-color: gray;
             
         }
     }// end 'reverse section'
@@ -165,6 +170,10 @@
                 }
             }
             
+            button{
+                text-align: center;
+            }
+            
         } // end of 'cta-content'
 
         .a-content{
@@ -202,7 +211,7 @@
             align-content: center;
             .reverse-img{
                 width: 25rem;
-                height: 25rem;
+                height: auto;
                 margin: auto;
                 border: 3px solid white;
                 border-radius: 15px;
