@@ -1,43 +1,80 @@
 .home{
     display: flex;
     flex-direction: column;
-    background-color: @bg-color;
+    //background-color: @bg-color;
     
     .cta-content{
-        margin:20rem 0 5rem 0;
+
+        
         display: flex;
         justify-content: space-between;
         .cta-img{
-            //background-color: gray;
-            //border: 1px solid gray;
-            width: 50rem;
-            height: 35rem;
-            margin:0 0 0 10rem;
+            //border: 1px solid red;
+            width: 60%;
+            height: auto;
+
         }
         .cta-text{
-            line-height: 1.75;
-            text-align: end;
-            margin: 5rem 10rem 0 0;
-            h1{
-                margin: 1rem 0;
+            //border: 1px solid red;
+            width: 40%; 
+            height: 66rem;
+            margin-top: 10rem;
+            background-color: @btn-bg-color;           
+           .cta-txt-wrapper{
+            background-color: @inner-color;
+            //border: 1px solid red;
+            width:80%;
+            height:80%;
+            margin:7rem 1rem 2rem 9rem;
+            border-radius: 25px;
+            .txt-ele{
+                //border: 1px solid red;
+                padding: 6rem 18rem 3rem;
+                text-align: center;
+                line-height: 1.25;
                 color: white;
-            }
+            }//end of txt-ele div
+
+            .txt-input{
+                width:42%;
+                //border: 1px solid red;
+                margin-left: 18rem;
+                margin-top: 3rem;
+                input{
+                    width: 25rem;
+                    height: 5rem;
+                    border-radius: 10px;
+                    font-size: 3rem;
+                }
+                             
+            }//end of txt-input div
+            .sign-up-btn{
+                width: 50%;
+                margin-left: 17rem;
+                margin-top: 2rem;
+
+                button{
+                    .custom-button(25rem, #b56357, white);
+                    margin-right: 1.5rem;
+                    text-align: center;
+                    }
+            }// end of sign-up-btn div
+                    
+
+           }
         }
-        button{
-            .custom-button(24rem, #8eaebd, white);
-            margin-right: 1.5rem;
-            text-align: end;
-        }
+       
         
     } // end'cta-content'
 
     .a-content{
         //border: 1px solid red;
+        margin-top: 15rem;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-evenly;
         img{
-           width: 45rem;
-           height: 35rem; 
+           width: 55rem;
+           height: 40rem; 
            margin-left: 10rem;
            margin-right: 10rem;
            background-color: gray;
@@ -60,15 +97,16 @@
         margin-top: 5rem;
         margin-bottom: 10rem;
         .reverse-txt{
-            width: 35rem;
-            padding:1rem;
-            margin-left:10rem; 
+            width: 50%;
+            padding: 1rem;
+            margin-left: 10rem;
+            padding-left: 23rem;
             
         }
 
         .reverse-img{
             //border: 1px solid gray;
-            width: 50rem;
+            width: 53rem;
             // height: 35rem; 
             margin-right: 10rem;
             padding:1rem;
@@ -78,26 +116,45 @@
     }// end 'reverse section'
 
     .cta-footer{
-        display: flex;
-        justify-content: space-between;
-        padding-left: 9rem;
+        //border: 1px solid gray;
         
-        h2{
-            font-size: 2rem;
-            padding-top: 2rem;
-        }
+        padding-left: 9rem;
+        .ft-cta-wrapper{
+            background-color:@btn-bg-color;
+            width: 80%;
+            margin: 2rem 14rem;
+            //border: 1px solid red;
+            padding: 3rem;
+            border-radius: 25px;
+            display:flex;
+            justify-content: space-evenly;
+            .footer-cta-txt{
+                width: 30%;
+                font-size: 2rem;
+                padding-top: 2rem;
+            }
+            .ft-input{
+                width: 30%;
+                margin-top: 1rem;
+                input{
+                    width: 25rem;
+                    height: 5rem;
+                    border-radius: 10px;
+                    font-size: 3rem;
+                }
+            }
+            .ft-btn{
+                width: 30%;
 
-        .cta-ft-btn{
-            .custom-button(30rem, #233237, white);
-            margin-right: 10rem;
-        }
+                .cta-ft-btn{
+                    .custom-button(30rem, #b56357, white);
+                    margin-right: 10rem;
+                    height: 6rem;
+                }
+            }
 
-        input{
-            width: 25rem;
-            height: 5rem;
-            border-radius: 10px;
-            font-size: 3rem;
-        }
+        }// end of ft-cta-wrapper div
+        
     }// end 'cta-footer'
 
 
@@ -106,7 +163,8 @@
         //border: 1px solid red;
         padding-top: 5rem;
         margin-top: 20rem;
-
+        
+        
         .page-heading{
             //border: 1px solid red;
             width: 80%;
@@ -118,34 +176,45 @@
                 padding-top: 2rem;
 
             }
-        }
 
-        .tm{
-            display: flex;
-            justify-content: space-evenly;
-            .tm-img{
-                width: 25rem;
-                height:25rem;
-                margin-left: 2rem;
-                
-                img{
-                    width: 95%;
-                    height: 95%;
-                    border:10px solid white;
-                    border-radius: 50%;
-                    //background-color: gray;
+        }
+        .folder{
+
+
+            .tm{
+                display: flex;
+                justify-content: space-evenly;
+                .tm-img{
+                    width: 25rem;
+                    height:25rem;
+                    margin-left: 2rem;
+                    
+                    img{
+                        width: 95%;
+                        height: 95%;
+                        border:10px solid white;
+                        border-radius: 50%;
+                        //background-color: gray;
+                    }
                 }
-            }
-            .tm-text{
-                width: 35rem;
-                height: 35rem;
-                padding-right: 5rem;
-                margin: 1rem 3rem 0 1rem;
-            }
+                .tm-text{
+                    width: 35rem;
+                    height: 35rem;
+                    padding-right: 5rem;
+                    margin: 1rem 3rem 0 1rem;
+                }
 
+                .panel-btns{
+                    //border: 1px solid red;
+                    button{
+                        .custom-button(15rem);
+                    }
+                    
+                } // end of panel-btns
 
-        }
+            }// end of tm class
 
+        }//end of folder class
 
 
     }// end of contact page CSS

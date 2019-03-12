@@ -163,21 +163,39 @@ img {
   max-width: 100%;
   height: auto;
 }
-.container {
-  max-width: 1000px;
-  width: 100%;
-  margin: 0 auto;
-}
 header {
   display: flex;
-  background-color: #233237;
+  background-color: #8eaebd;
   position: fixed;
+  width: 100%;
   justify-content: space-between;
-  width: 1000px;
+}
+header .logo {
+  width: 50%;
+}
+header .logo img {
+  width: 48rem;
+}
+header .navBar {
+  width: 50%;
+}
+header .navBar ul {
+  display: flex;
+  flex-direction: row-reverse;
+  padding-top: 2rem;
+  margin-top: 3rem;
+}
+header .navBar ul li {
+  margin: 1rem 10rem;
+  font-size: 2rem;
+}
+header .navBar ul li a {
+  text-decoration: none;
+  color: white;
 }
 header img {
-  width: 15rem;
-  height: 15rem;
+  width: 40rem;
+  height: 10rem;
   margin: 0 10rem;
 }
 @media (max-width: 515px) {
@@ -271,51 +289,75 @@ footer .footerImg img {
 .home {
   display: flex;
   flex-direction: column;
-  background-color: #8eaebd;
 }
 .home .cta-content {
-  margin: 20rem 0 5rem 0;
   display: flex;
   justify-content: space-between;
 }
 .home .cta-content .cta-img {
-  width: 50rem;
-  height: 35rem;
-  margin: 0 0 0 10rem;
+  width: 60%;
+  height: auto;
 }
 .home .cta-content .cta-text {
-  line-height: 1.75;
-  text-align: end;
-  margin: 5rem 10rem 0 0;
+  width: 40%;
+  height: 66rem;
+  margin-top: 10rem;
+  background-color: #7a9d96;
 }
-.home .cta-content .cta-text h1 {
-  margin: 1rem 0;
+.home .cta-content .cta-text .cta-txt-wrapper {
+  background-color: #7a97a9;
+  width: 80%;
+  height: 80%;
+  margin: 7rem 1rem 2rem 9rem;
+  border-radius: 25px;
+}
+.home .cta-content .cta-text .cta-txt-wrapper .txt-ele {
+  padding: 6rem 18rem 3rem;
+  text-align: center;
+  line-height: 1.25;
   color: white;
 }
-.home .cta-content button {
-  background-color: #8eaebd;
+.home .cta-content .cta-text .cta-txt-wrapper .txt-input {
+  width: 42%;
+  margin-left: 18rem;
+  margin-top: 3rem;
+}
+.home .cta-content .cta-text .cta-txt-wrapper .txt-input input {
+  width: 25rem;
+  height: 5rem;
+  border-radius: 10px;
+  font-size: 3rem;
+}
+.home .cta-content .cta-text .cta-txt-wrapper .sign-up-btn {
+  width: 50%;
+  margin-left: 17rem;
+  margin-top: 2rem;
+}
+.home .cta-content .cta-text .cta-txt-wrapper .sign-up-btn button {
+  background-color: #b56357;
   color: white;
   margin: 10px 10px;
   cursor: pointer;
   padding: 10px 5%;
-  width: 24rem;
+  width: 25rem;
   font-size: 2rem;
   border-radius: 10px;
   border: 0;
   margin-right: 1.5rem;
-  text-align: end;
+  text-align: center;
 }
-.home .cta-content button:hover {
+.home .cta-content .cta-text .cta-txt-wrapper .sign-up-btn button:hover {
   background-color: white;
-  color: #8eaebd;
+  color: #b56357;
 }
 .home .a-content {
+  margin-top: 15rem;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 .home .a-content img {
-  width: 45rem;
-  height: 35rem;
+  width: 55rem;
+  height: 40rem;
   margin-left: 10rem;
   margin-right: 10rem;
   background-color: gray;
@@ -333,26 +375,48 @@ footer .footerImg img {
   margin-bottom: 10rem;
 }
 .home .reverse .reverse-txt {
-  width: 35rem;
+  width: 50%;
   padding: 1rem;
   margin-left: 10rem;
+  padding-left: 23rem;
 }
 .home .reverse .reverse-img {
-  width: 50rem;
+  width: 53rem;
   margin-right: 10rem;
   padding: 1rem;
 }
 .home .cta-footer {
-  display: flex;
-  justify-content: space-between;
   padding-left: 9rem;
 }
-.home .cta-footer h2 {
+.home .cta-footer .ft-cta-wrapper {
+  background-color: #7a9d96;
+  width: 80%;
+  margin: 2rem 14rem;
+  padding: 3rem;
+  border-radius: 25px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.home .cta-footer .ft-cta-wrapper .footer-cta-txt {
+  width: 30%;
   font-size: 2rem;
   padding-top: 2rem;
 }
-.home .cta-footer .cta-ft-btn {
-  background-color: #233237;
+.home .cta-footer .ft-cta-wrapper .ft-input {
+  width: 30%;
+  margin-top: 1rem;
+}
+.home .cta-footer .ft-cta-wrapper .ft-input input {
+  width: 25rem;
+  height: 5rem;
+  border-radius: 10px;
+  font-size: 3rem;
+}
+.home .cta-footer .ft-cta-wrapper .ft-btn {
+  width: 30%;
+}
+.home .cta-footer .ft-cta-wrapper .ft-btn .cta-ft-btn {
+  background-color: #b56357;
   color: white;
   margin: 10px 10px;
   cursor: pointer;
@@ -362,16 +426,11 @@ footer .footerImg img {
   border-radius: 10px;
   border: 0;
   margin-right: 10rem;
+  height: 6rem;
 }
-.home .cta-footer .cta-ft-btn:hover {
+.home .cta-footer .ft-cta-wrapper .ft-btn .cta-ft-btn:hover {
   background-color: white;
-  color: #233237;
-}
-.home .cta-footer input {
-  width: 25rem;
-  height: 5rem;
-  border-radius: 10px;
-  font-size: 3rem;
+  color: #b56357;
 }
 .home .contact-content {
   padding-top: 5rem;
@@ -386,26 +445,41 @@ footer .footerImg img {
   text-align: center;
   padding-top: 2rem;
 }
-.home .contact-content .tm {
+.home .contact-content .folder .tm {
   display: flex;
   justify-content: space-evenly;
 }
-.home .contact-content .tm .tm-img {
+.home .contact-content .folder .tm .tm-img {
   width: 25rem;
   height: 25rem;
   margin-left: 2rem;
 }
-.home .contact-content .tm .tm-img img {
+.home .contact-content .folder .tm .tm-img img {
   width: 95%;
   height: 95%;
   border: 10px solid white;
   border-radius: 50%;
 }
-.home .contact-content .tm .tm-text {
+.home .contact-content .folder .tm .tm-text {
   width: 35rem;
   height: 35rem;
   padding-right: 5rem;
   margin: 1rem 3rem 0 1rem;
+}
+.home .contact-content .folder .tm .panel-btns button {
+  background-color: black;
+  color: white;
+  margin: 10px 10px;
+  cursor: pointer;
+  padding: 10px 5%;
+  width: 15rem;
+  font-size: 2rem;
+  border-radius: 10px;
+  border: 0;
+}
+.home .contact-content .folder .tm .panel-btns button:hover {
+  background-color: white;
+  color: black;
 }
 @media (max-width: 515px) {
   .home .cta-content {

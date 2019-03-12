@@ -14,21 +14,44 @@
 
     <div class ="container home">
         <header>
-            <a href="index.html"><img src="./images/elogo.png" alt="logo"></a> 
-            <div class="btn-container">
-                <button class='login-btn'>Login</button>
-                <button class='contact-btn' onclick="window.location.href = 'contact.html'">Contact</button>
-                
-            </div>    
+                <div class="logo">
+                    <a href="index.html"><img src="./images/E.Logo .png" alt="logo"></a>
+                </div>
+                <div class="navBar">
+                    <nav class="topNav">
+                        <ul>
+                            <li> <a href="">CONTACT</a> </li>
+                            <li> <a href="">LOGIN</a> </li>
+                            
+                        </ul>
+                    </nav>
+                </div> 
         </header>
 
         <div class = "cta-content">
             <div class="cta-img">   
-                <img src="./images/e.pic_3.jpg" alt="coffee-on-the-cavans">
+                <img src="./images/top-bg.jpg" alt="stones_by_beach">
             </div>
             <div class = "cta-text">
-            <h1>Start your <br> Essentialism <br> lifestyle today</h1>
-            <button>Let's get started</button>
+                <div class="cta-txt-wrapper">
+                    <div class="txt-ele">
+                        
+                            <h1>Are you ready<br>to start living<br>your values<br>today?</h1>
+                        
+                    </div>
+                    
+                    
+                    <div class="txt-input">
+                        <input type = "text" id="firstName" name="name"  minlength="2" maxlength="8" size="10" placeholder="First Name Here">
+                    </div>
+                    
+                    <div class="sign-up-btn">
+                        <button>Sign Me Up!</button>
+                    </div>
+                    
+
+                </div>
+            
             </div>    
         </div>
 
@@ -53,10 +76,22 @@
         </div>  <!-- end of 'reverse-content' -->
 
         <div class="cta-footer">
+            <div class="ft-cta-wrapper">
+                <div class="footer-cta-txt">
+                    <h2>Join Essentialism today...</h2>
+                </div>
+                
+                <div class="ft-input">
+                    <input type = "text" id="firstName" name="name"  minlength="2" maxlength="8" size="10" placeholder="First Name Here">
+                </div>
+                
+                <div class="ft-btn">
+                    <button class="cta-ft-btn">Sign me up!</button>
+                </div>
+                
 
-            <h2 class="footer-cta-txt">Join Essentialism today</h2>
-            <input type = "text" id="firstName" name="name"  minlength="2" maxlength="8" size="10" placeholder="First Name Here">
-            <button class="cta-ft-btn">Sign me up!</button>
+            </div>
+            
         </div>
         <footer>
             <p>Copyright &copy; Essentialism 2019</p>
