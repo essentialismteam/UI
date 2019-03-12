@@ -76,15 +76,126 @@
         display: flex;
         justify-content: space-between;
         padding-left: 9rem;
-
+        
         h2{
             font-size: 2rem;
+            padding-top: 2rem;
         }
 
         .cta-ft-btn{
             .custom-button(30rem, #233237, white);
             margin-right: 10rem;
         }
-    }
+
+        input{
+            width: 25rem;
+            height: 5rem;
+            border-radius: 10px;
+            font-size: 3rem;
+        }
+    }// end 'cta-footer'
+
+    @media @mobile{
+
+        .cta-content{
+            width: 100%;
+
+            .cta-img{
+                display: none;
+            }
+            .cta-text{
+                width: 100%;
+                margin: auto;
+                text-align: center;
+                line-height: 6rem;
+                &::first-letter{
+                    font-size: 10rem;
+                    color:@navBar-color;
+                }
+            }
+            
+        } // end of 'cta-content'
+
+        .a-content{
+            flex-direction: column;
+            width: 100%;
+            align-content: center;
+
+            .a-content-img{
+                width: 100%;
+                margin: auto;
+                
+                img{
+                    width: 25rem;
+                    height: 25rem;
+                    margin: auto 0 0 13rem;
+                    border: 3px solid white;
+                    border-radius: 15px;
+                    
+                }
+            }
+
+            .a-content-txt{
+                width: 100%;
+                text-align: center;
+                margin: auto;
+                padding: 2rem;
+            }
+
+        }//end of 'a-content'
+
+
+        .reverse{
+            width: 100%;
+            flex-direction: column-reverse;
+            align-content: center;
+            .reverse-img{
+                width: 25rem;
+                height: 25rem;
+                margin: auto;
+                border: 3px solid white;
+                border-radius: 15px;
+            }
+
+            .reverse-txt{
+                width: 100%;
+                margin: auto;
+                padding-top: 3rem;
+                text-align: center;
+                padding: 2rem;
+
+            }
+
+        }//end of 'reverse'
+
+        .cta-footer{
+            width: 100%;
+            flex-direction: column;
+            align-content: center;
+            padding: 2rem;
+            h2{
+                font-size: 3rem;
+                text-align: center;
+
+                &::first-letter{
+                    font-size: 5rem;
+                }
+            }
+
+            input{
+                width: 75%;
+                margin: 2rem auto;
+            }
+
+            .cta-ft-btn{
+                width: 100%;
+                margin: auto;
+            }
+
+
+
+        }//end of 'cta-footer'
+
+    }//end of media query
 
 }// end 'home container'

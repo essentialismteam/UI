@@ -180,10 +180,22 @@ header img {
   height: 15rem;
   margin: 0 10rem;
 }
+@media (max-width: 515px) {
+  header {
+    width: 100%;
+  }
+  header img {
+    width: 10rem;
+    height: 10rem;
+    margin: 1rem;
+  }
+}
 .btn-container {
   width: 100%;
   padding: 4rem 1rem;
   height: 15rem;
+  display: flex;
+  justify-content: space-evenly;
 }
 .btn-container .login-btn {
   background-color: #233237;
@@ -194,6 +206,7 @@ header img {
   width: 25rem;
   font-size: 2rem;
   border-radius: 10px;
+  border: 0;
   margin-right: 1rem;
 }
 .btn-container .login-btn:hover {
@@ -209,10 +222,29 @@ header img {
   width: 25rem;
   font-size: 2rem;
   border-radius: 10px;
+  border: 0;
 }
 .btn-container .contact-btn:hover {
   background-color: white;
   color: #233237;
+}
+@media (max-width: 515px) {
+  .btn-container {
+    flex-direction: column;
+    width: 75%;
+    height: 10rem;
+  }
+  .btn-container .login-btn {
+    border: 1px solid red;
+    width: 90%;
+    margin: 1rem auto 2rem;
+    padding-bottom: 3rem;
+  }
+  .btn-container .contact-btn {
+    width: 90%;
+    margin: auto;
+    padding-bottom: 3rem;
+  }
 }
 footer {
   display: flex;
@@ -254,6 +286,7 @@ footer {
   width: 24rem;
   font-size: 2rem;
   border-radius: 10px;
+  border: 0;
   margin-right: 1.5rem;
 }
 .home .cta-content button:hover {
@@ -300,6 +333,7 @@ footer {
 }
 .home .cta-footer h2 {
   font-size: 2rem;
+  padding-top: 2rem;
 }
 .home .cta-footer .cta-ft-btn {
   background-color: #233237;
@@ -310,9 +344,96 @@ footer {
   width: 30rem;
   font-size: 2rem;
   border-radius: 10px;
+  border: 0;
   margin-right: 10rem;
 }
 .home .cta-footer .cta-ft-btn:hover {
   background-color: white;
   color: #233237;
+}
+.home .cta-footer input {
+  width: 25rem;
+  height: 5rem;
+  border-radius: 10px;
+  font-size: 3rem;
+}
+@media (max-width: 515px) {
+  .home .cta-content {
+    width: 100%;
+  }
+  .home .cta-content .cta-img {
+    display: none;
+  }
+  .home .cta-content .cta-text {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    line-height: 6rem;
+  }
+  .home .cta-content .cta-text::first-letter {
+    font-size: 10rem;
+    color: #233237;
+  }
+  .home .a-content {
+    flex-direction: column;
+    width: 100%;
+    align-content: center;
+  }
+  .home .a-content .a-content-img {
+    width: 100%;
+    margin: auto;
+  }
+  .home .a-content .a-content-img img {
+    width: 25rem;
+    height: 25rem;
+    margin: auto 0 0 13rem;
+    border: 3px solid white;
+    border-radius: 15px;
+  }
+  .home .a-content .a-content-txt {
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    padding: 2rem;
+  }
+  .home .reverse {
+    width: 100%;
+    flex-direction: column-reverse;
+    align-content: center;
+  }
+  .home .reverse .reverse-img {
+    width: 25rem;
+    height: 25rem;
+    margin: auto;
+    border: 3px solid white;
+    border-radius: 15px;
+  }
+  .home .reverse .reverse-txt {
+    width: 100%;
+    margin: auto;
+    padding-top: 3rem;
+    text-align: center;
+    padding: 2rem;
+  }
+  .home .cta-footer {
+    width: 100%;
+    flex-direction: column;
+    align-content: center;
+    padding: 2rem;
+  }
+  .home .cta-footer h2 {
+    font-size: 3rem;
+    text-align: center;
+  }
+  .home .cta-footer h2::first-letter {
+    font-size: 5rem;
+  }
+  .home .cta-footer input {
+    width: 75%;
+    margin: 2rem auto;
+  }
+  .home .cta-footer .cta-ft-btn {
+    width: 100%;
+    margin: auto;
+  }
 }

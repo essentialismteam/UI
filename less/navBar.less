@@ -3,6 +3,8 @@
     width: 100%;
     padding: 4rem 1rem;
     height: 15rem;
+    display: flex;
+    justify-content: space-evenly;
     
     .login-btn{
         .custom-button(25rem, #233237, white);
@@ -12,4 +14,24 @@
     .contact-btn{
         .custom-button(25rem, #233237, white);
     }
+
+    @media @mobile{
+        flex-direction: column;
+        width: 75%;
+        height: 10rem;
+
+        .login-btn{
+            border: 1px solid red;
+            width: 90%;
+            margin: 1rem auto 2rem;
+            padding-bottom: 3rem;
+        }
+        .contact-btn{
+            width: 90%;
+            margin: auto;
+            padding-bottom: 3rem;
+        }
+    }
+
+
 }
