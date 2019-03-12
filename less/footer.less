@@ -1,6 +1,28 @@
 footer{
     display: flex;
+    flex-direction: column;
     background-color: @navBar-color;
-    padding: 3rem 0 ;
-    justify-content: center;
-}
+    padding: 3rem 0;
+    
+    p{
+        text-align: center;
+    }
+
+    .footerImg{
+        display:flex;
+        justify-content: center;
+        img{
+            width:5rem;
+            height: 5rem;
+            //border: 1px solid red;
+            margin: 0 2rem;
+        }
+    }
+    //media query for footer
+    @media @mobile{
+        width: 100%;
+    }
+
+
+
+}// end of footer

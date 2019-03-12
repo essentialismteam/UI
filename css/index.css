@@ -247,9 +247,26 @@ header img {
 }
 footer {
   display: flex;
+  flex-direction: column;
   background-color: #233237;
-  padding: 3rem 0 ;
+  padding: 3rem 0;
+}
+footer p {
+  text-align: center;
+}
+footer .footerImg {
+  display: flex;
   justify-content: center;
+}
+footer .footerImg img {
+  width: 5rem;
+  height: 5rem;
+  margin: 0 2rem;
+}
+@media (max-width: 515px) {
+  footer {
+    width: 100%;
+  }
 }
 .home {
   display: flex;
