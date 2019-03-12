@@ -356,6 +356,40 @@ footer {
   border-radius: 10px;
   font-size: 3rem;
 }
+.home .contact-content {
+  padding-top: 5rem;
+  margin-top: 20rem;
+}
+.home .contact-content .page-heading {
+  width: 80%;
+  height: 10rem;
+  margin: 2rem auto;
+}
+.home .contact-content .page-heading h2 {
+  text-align: center;
+  padding-top: 2rem;
+}
+.home .contact-content .tm {
+  display: flex;
+  justify-content: space-evenly;
+}
+.home .contact-content .tm .tm-img {
+  width: 25rem;
+  height: 25rem;
+  margin-left: 2rem;
+}
+.home .contact-content .tm .tm-img img {
+  width: 95%;
+  height: 95%;
+  border: 10px solid white;
+  border-radius: 50%;
+}
+.home .contact-content .tm .tm-text {
+  width: 35rem;
+  height: 35rem;
+  padding-right: 5rem;
+  margin: 1rem 3rem 0 1rem;
+}
 @media (max-width: 515px) {
   .home .cta-content {
     width: 100%;
@@ -434,5 +468,39 @@ footer {
   .home .cta-footer .cta-ft-btn {
     width: 100%;
     margin: auto;
+  }
+  .home .contact-content {
+    padding-top: 2rem;
+    margin-top: 10rem;
+  }
+  .home .contact-content .page-heading {
+    width: 100%;
+  }
+  .home .contact-content .page-heading h2 {
+    color: white;
+    font-size: 5rem;
+  }
+  .home .contact-content .tm {
+    flex-direction: column;
+    width: 100%;
+  }
+  .home .contact-content .tm .tm-img {
+    margin: 2rem auto 0;
+  }
+  .home .contact-content .tm .tm-img img {
+    border-radius: 25%;
+  }
+  .home .contact-content .tm .tm-text {
+    margin: 5rem auto;
+    text-align: center;
+    height: 25rem;
+  }
+  .home .contact-content .tm .tm-text h2 {
+    width: 100%;
+    margin-left: 2rem;
+  }
+  .home .contact-content .tm .tm-text p {
+    width: 100%;
+    margin-left: 2rem;
   }
 }

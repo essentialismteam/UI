@@ -95,6 +95,57 @@
         }
     }// end 'cta-footer'
 
+
+    //beginning contact page CSS
+    .contact-content{
+        //border: 1px solid red;
+        padding-top: 5rem;
+        margin-top: 20rem;
+
+        .page-heading{
+            //border: 1px solid red;
+            width: 80%;
+            height: 10rem;           
+            margin: 2rem auto;
+
+            h2{
+                text-align: center;
+                padding-top: 2rem;
+
+            }
+        }
+
+        .tm{
+            display: flex;
+            justify-content: space-evenly;
+            .tm-img{
+                width: 25rem;
+                height:25rem;
+                margin-left: 2rem;
+                
+                img{
+                    width: 95%;
+                    height: 95%;
+                    border:10px solid white;
+                    border-radius: 50%;
+                    //background-color: gray;
+                }
+            }
+            .tm-text{
+                width: 35rem;
+                height: 35rem;
+                padding-right: 5rem;
+                margin: 1rem 3rem 0 1rem;
+            }
+
+
+        }
+
+
+
+    }// end of contact page CSS
+
+
     @media @mobile{
 
         .cta-content{
@@ -195,6 +246,54 @@
 
 
         }//end of 'cta-footer'
+
+        //contact page mobile CSS
+        .contact-content{
+            padding-top: 2rem;
+            margin-top: 10rem;
+
+            .page-heading{
+                width:100%;
+                
+                h2{
+                    color: white;
+                    font-size: 5rem;
+                }
+
+            }
+            .tm{
+                flex-direction: column;
+                width: 100%;
+                //border: 1px solid red;
+
+                .tm-img{
+                    margin: 2rem auto 0;
+
+                    img{
+                        border-radius: 25%;
+                    }
+                }
+
+                .tm-text{
+                    margin: 5rem auto;
+                    text-align: center;
+                    height: 25rem;
+
+                    h2{
+                        width: 100%;
+                        margin-left: 2rem;
+
+                    }
+
+                    p{
+                        width: 100%;
+                        margin-left: 2rem;
+                    }
+                }
+            }
+
+
+        }//end of contact page mobile CSS
 
     }//end of media query
 
