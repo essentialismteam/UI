@@ -1,11 +1,14 @@
 footer{
     display: flex;
     flex-direction: column;
-    background-color: @navBar-color;
+    background-color: @bg-color;
     padding: 3rem 0;
     
     p{
         text-align: center;
+        font-size: 3rem;
+        font-family: "Source Serif Pro" ;
+        color:@navBar-color;
     }
 
     .footerImg{
@@ -21,6 +24,11 @@ footer{
     //media query for footer
     @media @mobile{
         width: 100%;
+
+        p{
+            font-size: 2rem;
+            
+        }
     }
 
 

@@ -222,32 +222,46 @@
 
     @media @mobile{
 
+        width: 100%;
         .cta-content{
-            width: 100%;
-
+            width: 99%;
+            margin: 5rem 0;
             .cta-img{
                 display: none;
             }
             .cta-text{
-                width: 100%;
-                margin: auto;
-                text-align: center;
-                line-height: 6rem;
-                &::first-letter{
-                    font-size: 10rem;
-                    color:@navBar-color;
+                width: 45rem;
+                height: 45rem;
+                margin: 10rem 5rem;
+                .cta-txt-wrapper{
+                margin: 6rem auto;
+                .txt-ele{
+                    width: 50%;
+                    padding: 5rem 1rem;
+                    height: 20rem;
+                    margin: 0 8rem;
+                    h1{
+                        font-size: 2rem;
+                    }    
                 }
-            }
-            
-            button{
-                text-align: center;
-            }
+                
+                .txt-input{
+                    width: 85%;
+                    margin: 1rem 3rem;  
+                }
+                .sign-up-btn{
+                    width: 85%;
+                    margin: 1rem 2rem;
+                }
+
+                }//end of cta-txt-wrapper div
+            }//end of cta-text div
             
         } // end of 'cta-content'
 
         .a-content{
             flex-direction: column;
-            width: 100%;
+            width: 95%;
             align-content: center;
 
             .a-content-img{
@@ -267,7 +281,7 @@
             .a-content-txt{
                 width: 100%;
                 text-align: center;
-                margin: auto;
+                margin: 0 2rem;
                 padding: 2rem;
             }
 
@@ -299,27 +313,37 @@
 
         .cta-footer{
             width: 100%;
-            flex-direction: column;
-            align-content: center;
-            padding: 2rem;
-            h2{
-                font-size: 3rem;
-                text-align: center;
-
-                &::first-letter{
-                    font-size: 5rem;
-                }
-            }
-
-            input{
-                width: 75%;
-                margin: 2rem auto;
-            }
-
-            .cta-ft-btn{
+            padding: 0 1px;
+            .ft-cta-wrapper{
                 width: 100%;
-                margin: auto;
-            }
+                margin: 1rem 0;
+                padding: 1rem;
+                flex-direction: column;
+                .footer-cta-txt{
+                    text-align: center;
+                    width: 100%;
+                    h2{
+                        font-size:2rem;
+                    }
+                }
+                .ft-input{
+                    width: 100%;
+                    input{
+                        margin: 0 11rem;
+                    }
+                }
+                .ft-btn{
+                    width: 100%;
+                    margin: 1 10rem;
+                    .cta-ft-btn{
+                        height: 4rem;
+                        width: 25rem;
+                    }
+
+                }
+
+            
+            }//end of ft-cta-wrapper
 
 
 
@@ -334,41 +358,57 @@
                 width:100%;
                 
                 h2{
-                    color: white;
+                    color: @navBar-color;;
                     font-size: 5rem;
                 }
 
             }
-            .tm{
-                flex-direction: column;
-                width: 100%;
-                //border: 1px solid red;
 
-                .tm-img{
-                    margin: 2rem auto 0;
+            .folder{
 
-                    img{
-                        border-radius: 25%;
+                .tm{
+                    flex-direction: column;
+                    width: 100%;
+                    //border: 1px solid red;
+    
+                    .tm-img{
+                        width: 95%;
+                        height:22rem;
+    
+                        img{
+                            margin: 0 auto;
+                            padding: 1px 12rem;
+                            border-radius: 1px;
+
+                        }
                     }
-                }
+    
+                    .tm-text{
+                        width: 95%;
+                        margin: 0 1rem;
+                        padding: 0;
+                        
 
-                .tm-text{
-                    margin: 5rem auto;
-                    text-align: center;
-                    height: 25rem;
+                        h2{
+                            width:100%;
+                            text-align: center;
+                        }
+                        .panel-btns{
+                            width: 80%;
+                            margin-left: 7rem;
+                        }
+                        .tm-content{
+                            width: 100%;
+                            P{
 
-                    h2{
-                        width: 100%;
-                        margin-left: 2rem;
-
+                            }
+                        }
                     }
-
-                    p{
-                        width: 100%;
-                        margin-left: 2rem;
-                    }
+                    
+    
                 }
             }
+            
 
 
         }//end of contact page mobile CSS

@@ -200,11 +200,26 @@ header img {
 }
 @media (max-width: 515px) {
   header {
+    flex-direction: column;
     width: 100%;
   }
-  header img {
-    width: 10rem;
-    height: 10rem;
+  header .logo {
+    width: 100%;
+  }
+  header .logo img {
+    width: 50%;
+    height: 5rem;
+    margin: 1rem 13rem;
+  }
+  header .navBar {
+    width: 100%;
+    height: 6rem;
+  }
+  header .navBar ul {
+    margin-top: 1px;
+    justify-content: space-evenly;
+  }
+  header .navBar ul li {
     margin: 1rem;
   }
 }
@@ -266,11 +281,14 @@ header img {
 footer {
   display: flex;
   flex-direction: column;
-  background-color: #233237;
+  background-color: #8eaebd;
   padding: 3rem 0;
 }
 footer p {
   text-align: center;
+  font-size: 3rem;
+  font-family: "Source Serif Pro";
+  color: #233237;
 }
 footer .footerImg {
   display: flex;
@@ -284,6 +302,9 @@ footer .footerImg img {
 @media (max-width: 515px) {
   footer {
     width: 100%;
+  }
+  footer p {
+    font-size: 2rem;
   }
 }
 .home {
@@ -482,28 +503,44 @@ footer .footerImg img {
   color: black;
 }
 @media (max-width: 515px) {
-  .home .cta-content {
+  .home {
     width: 100%;
+  }
+  .home .cta-content {
+    width: 99%;
+    margin: 5rem 0;
   }
   .home .cta-content .cta-img {
     display: none;
   }
   .home .cta-content .cta-text {
-    width: 100%;
-    margin: auto;
-    text-align: center;
-    line-height: 6rem;
+    width: 45rem;
+    height: 45rem;
+    margin: 10rem 5rem;
   }
-  .home .cta-content .cta-text::first-letter {
-    font-size: 10rem;
-    color: #233237;
+  .home .cta-content .cta-text .cta-txt-wrapper {
+    margin: 6rem auto;
   }
-  .home .cta-content button {
-    text-align: center;
+  .home .cta-content .cta-text .cta-txt-wrapper .txt-ele {
+    width: 50%;
+    padding: 5rem 1rem;
+    height: 20rem;
+    margin: 0 8rem;
+  }
+  .home .cta-content .cta-text .cta-txt-wrapper .txt-ele h1 {
+    font-size: 2rem;
+  }
+  .home .cta-content .cta-text .cta-txt-wrapper .txt-input {
+    width: 85%;
+    margin: 1rem 3rem;
+  }
+  .home .cta-content .cta-text .cta-txt-wrapper .sign-up-btn {
+    width: 85%;
+    margin: 1rem 2rem;
   }
   .home .a-content {
     flex-direction: column;
-    width: 100%;
+    width: 95%;
     align-content: center;
   }
   .home .a-content .a-content-img {
@@ -520,7 +557,7 @@ footer .footerImg img {
   .home .a-content .a-content-txt {
     width: 100%;
     text-align: center;
-    margin: auto;
+    margin: 0 2rem;
     padding: 2rem;
   }
   .home .reverse {
@@ -544,24 +581,34 @@ footer .footerImg img {
   }
   .home .cta-footer {
     width: 100%;
-    flex-direction: column;
-    align-content: center;
-    padding: 2rem;
+    padding: 0 1px;
   }
-  .home .cta-footer h2 {
-    font-size: 3rem;
-    text-align: center;
-  }
-  .home .cta-footer h2::first-letter {
-    font-size: 5rem;
-  }
-  .home .cta-footer input {
-    width: 75%;
-    margin: 2rem auto;
-  }
-  .home .cta-footer .cta-ft-btn {
+  .home .cta-footer .ft-cta-wrapper {
     width: 100%;
-    margin: auto;
+    margin: 1rem 0;
+    padding: 1rem;
+    flex-direction: column;
+  }
+  .home .cta-footer .ft-cta-wrapper .footer-cta-txt {
+    text-align: center;
+    width: 100%;
+  }
+  .home .cta-footer .ft-cta-wrapper .footer-cta-txt h2 {
+    font-size: 2rem;
+  }
+  .home .cta-footer .ft-cta-wrapper .ft-input {
+    width: 100%;
+  }
+  .home .cta-footer .ft-cta-wrapper .ft-input input {
+    margin: 0 11rem;
+  }
+  .home .cta-footer .ft-cta-wrapper .ft-btn {
+    width: 100%;
+    margin: 1 10rem;
+  }
+  .home .cta-footer .ft-cta-wrapper .ft-btn .cta-ft-btn {
+    height: 4rem;
+    width: 25rem;
   }
   .home .contact-content {
     padding-top: 2rem;
@@ -571,30 +618,36 @@ footer .footerImg img {
     width: 100%;
   }
   .home .contact-content .page-heading h2 {
-    color: white;
+    color: #233237;
     font-size: 5rem;
   }
-  .home .contact-content .tm {
+  .home .contact-content .folder .tm {
     flex-direction: column;
     width: 100%;
   }
-  .home .contact-content .tm .tm-img {
-    margin: 2rem auto 0;
+  .home .contact-content .folder .tm .tm-img {
+    width: 95%;
+    height: 22rem;
   }
-  .home .contact-content .tm .tm-img img {
-    border-radius: 25%;
+  .home .contact-content .folder .tm .tm-img img {
+    margin: 0 auto;
+    padding: 1px 12rem;
+    border-radius: 1px;
   }
-  .home .contact-content .tm .tm-text {
-    margin: 5rem auto;
+  .home .contact-content .folder .tm .tm-text {
+    width: 95%;
+    margin: 0 1rem;
+    padding: 0;
+  }
+  .home .contact-content .folder .tm .tm-text h2 {
+    width: 100%;
     text-align: center;
-    height: 25rem;
   }
-  .home .contact-content .tm .tm-text h2 {
-    width: 100%;
-    margin-left: 2rem;
+  .home .contact-content .folder .tm .tm-text .panel-btns {
+    width: 80%;
+    margin-left: 7rem;
   }
-  .home .contact-content .tm .tm-text p {
+  .home .contact-content .folder .tm .tm-text .tm-content {
     width: 100%;
-    margin-left: 2rem;
   }
 }
