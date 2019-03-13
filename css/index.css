@@ -507,16 +507,16 @@ footer .footerImg img {
     width: 100%;
   }
   .home .cta-content {
-    width: 99%;
+    width: 100%;
     margin: 5rem 0;
   }
   .home .cta-content .cta-img {
     display: none;
   }
   .home .cta-content .cta-text {
-    width: 45rem;
+    width: 100%;
     height: 45rem;
-    margin: 10rem 5rem;
+    margin: 10rem 0;
   }
   .home .cta-content .cta-text .cta-txt-wrapper {
     margin: 6rem auto;
@@ -525,22 +525,22 @@ footer .footerImg img {
     width: 50%;
     padding: 5rem 1rem;
     height: 20rem;
-    margin: 0 8rem;
+    margin: 0 10rem;
   }
   .home .cta-content .cta-text .cta-txt-wrapper .txt-ele h1 {
     font-size: 2rem;
   }
   .home .cta-content .cta-text .cta-txt-wrapper .txt-input {
-    width: 85%;
-    margin: 1rem 3rem;
+    width: 60%;
+    margin-left: 8rem;
   }
   .home .cta-content .cta-text .cta-txt-wrapper .sign-up-btn {
-    width: 85%;
-    margin: 1rem 2rem;
+    width: 70%;
+    margin: 1rem 7rem;
   }
   .home .a-content {
     flex-direction: column;
-    width: 95%;
+    width: 99%;
     align-content: center;
   }
   .home .a-content .a-content-img {
@@ -555,13 +555,12 @@ footer .footerImg img {
     border-radius: 15px;
   }
   .home .a-content .a-content-txt {
-    width: 100%;
+    width: 99%;
     text-align: center;
-    margin: 0 2rem;
     padding: 2rem;
   }
   .home .reverse {
-    width: 100%;
+    width: 99%;
     flex-direction: column-reverse;
     align-content: center;
   }
@@ -603,7 +602,7 @@ footer .footerImg img {
     margin: 0 11rem;
   }
   .home .cta-footer .ft-cta-wrapper .ft-btn {
-    width: 100%;
+    width: 65%;
     margin: 1 10rem;
   }
   .home .cta-footer .ft-cta-wrapper .ft-btn .cta-ft-btn {
