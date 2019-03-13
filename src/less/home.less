@@ -17,7 +17,7 @@
         .cta-text{
             //border: 1px solid red;
             width: 40%; 
-            height: 66rem;
+            height: 657px;
             margin-top: 10rem;
             background-color: @btn-bg-color;           
            .cta-txt-wrapper{
@@ -69,7 +69,7 @@
 
     .a-content{
         //border: 1px solid red;
-        margin-top: 15rem;
+        margin-top: 10rem;
         display: flex;
         justify-content: space-evenly;
         img{
@@ -94,7 +94,7 @@
     .reverse{
         display: flex;
         
-        margin-top: 5rem;
+        margin-top: 10rem;
         margin-bottom: 10rem;
         .reverse-txt{
             width: 50%;
@@ -114,6 +114,22 @@
             
         }
     }// end 'reverse section'
+
+    .third-content{
+        display: flex;
+        margin: 0 auto;
+        .third-content-img{
+            width: 55rem;
+            height: auto;
+        }
+        .third-content-txt{
+            //border: 1px solid red;
+            width: 63rem;
+            text-align: end;
+            padding: 2rem;
+            margin: 1rem 1rem 0rem 8rem;
+        }
+    }//end of third-content
 
     .cta-footer{
         //border: 1px solid gray;
@@ -162,7 +178,7 @@
     .contact-content{
         //border: 1px solid red;
         padding-top: 5rem;
-        margin-top: 20rem;
+        margin-top: 10rem;
         
         
         .page-heading{
@@ -179,40 +195,79 @@
 
         }
         .folder{
-
-
+            display:flex;
+            flex-direction: column;
+            align-content: center;
+            
             .tm{
+                
                 display: flex;
                 justify-content: space-evenly;
                 .tm-img{
+                    
                     width: 25rem;
                     height:25rem;
                     margin-left: 2rem;
                     
                     img{
+                        
                         width: 95%;
                         height: 95%;
-                        border:10px solid white;
+                        border:10px solid @border;
                         border-radius: 50%;
                         //background-color: gray;
                     }
                 }
-                .tm-text{
-                    width: 35rem;
-                    height: 35rem;
-                    padding-right: 5rem;
-                    margin: 1rem 3rem 0 1rem;
-                }
-
-                .panel-btns{
+            } // end of tm       
+            .board{
+                //border: 1px solid red;
+                width: 30%;
+                flex-direction: column;
+                align-content: center;
+                margin: 5rem auto;
+                
+                    .tm-text{
+                    text-align: center;   
+                    height: auto;
+                    h2{
+                        padding-top: 10px;
+                    }
+                    // .tm-content{
+                        
+                    // }
+                    .panel-btns{
                     //border: 1px solid red;
                     button{
-                        .custom-button(15rem);
+                        .custom-button(15rem, b56357, white);
+                        }   
+                    } 
+                    .hide-btn{
+                        
+                            display: none;
                     }
-                    
-                } // end of panel-btns
+                
+                
+                }
+                    .tm-content{
+                    display: none;
+                    //border: 1px solid gray;
+                        margin: 1rem;
+                        padding: 1rem 10rem;
+                        text-align: center;
 
-            }// end of tm class
+                    }
+                    // end of panel-btns
+
+                    
+                    
+
+                    .toggle-on{
+                        display: block;
+                    }
+
+                }// end of board
+             
+            
 
         }//end of folder class
 
@@ -225,14 +280,14 @@
         width: 100%;
         .cta-content{
             width: 100%;
-            margin: 5rem 0;
+            margin: 5rem 0 0;
             .cta-img{
                 display: none;
             }
             .cta-text{
                 width: 100%;
                 height: 45rem;
-                margin: 10rem 0;
+                margin: 10rem 0 0;
                 .cta-txt-wrapper{
                 margin: 6rem auto;
                 .txt-ele{
@@ -261,8 +316,9 @@
 
         .a-content{
             flex-direction: column;
-            width: 99%;
+            width: 100%;
             align-content: center;
+            margin: auto;
 
             .a-content-img{
                 width: 100%;
@@ -270,10 +326,10 @@
                 
                 img{
                     width: 25rem;
-                    height: 25rem;
-                    margin: auto 0 0 13rem;
+                    height: 15rem;
+                    margin: 5rem 12rem 1rem;
                     border: 3px solid white;
-                    border-radius: 15px;
+                    //border-radius: 15px;
                     
                 }
             }
@@ -310,6 +366,23 @@
             }
 
         }//end of 'reverse'
+
+        .third-content{
+            width: 100%;
+            flex-direction: column;
+            align-content: center;
+            .third-content-img{
+                width: 25rem;
+                margin: 0 auto;
+            }
+            .third-content-txt{
+                width: 100%;
+                margin: auto;
+                text-align: center;
+                padding: 2rem;
+            }
+        }
+
 
         .cta-footer{
             width: 100%;
@@ -369,33 +442,41 @@
                 .tm{
                     flex-direction: column;
                     width: 100%;
+                    align-content: center;
                     //border: 1px solid red;
     
                     .tm-img{
-                        width: 95%;
-                        height:22rem;
-    
+                        width: 50%;
+                        margin: 1rem auto;
+                        
                         img{
-                            margin: 0 auto;
-                            padding: 1px 12rem;
-                            border-radius: 1px;
+                            margin: 0 1rem;
+                            width: 25rem;
+                            height: auto;
+                            border-radius: 25px;
 
                         }
                     }
-    
-                    .tm-text{
-                        width: 95%;
-                        margin: 0 1rem;
+                }
+               .board{
+                //border: 1px solid red;
+                width: 100%;
+                margin:1rem auto;
+                .tm-text{
+                        width: 100%;
+                        
                         padding: 0;
                         
 
                         h2{
-                            width:100%;
+                            width:55%;
                             text-align: center;
+                            margin: 0 12rem;
                         }
                         .panel-btns{
-                            width: 80%;
-                            margin-left: 7rem;
+                            width: 35%;
+                            margin: 5px auto;
+                            
                         }
                         .tm-content{
                             width: 100%;
@@ -404,10 +485,8 @@
                             }
                         }
                     }
-                    
-    
-                }
-            }
+            } //end of board 
+            }// end of folder
             
 
 
