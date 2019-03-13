@@ -692,8 +692,10 @@ footer .footerImg img {
     font-size: 5rem;
   }
   .home .contact-content .folder .tm {
+    margin: 1px;
     flex-direction: column;
     width: 100%;
+    height: 20rem;
     align-content: center;
   }
   .home .contact-content .folder .tm .tm-img {
@@ -717,13 +719,16 @@ footer .footerImg img {
   .home .contact-content .folder .board .tm-text h2 {
     width: 55%;
     text-align: center;
-    margin: 0 12rem;
+    margin: 0 94px;
   }
   .home .contact-content .folder .board .tm-text .panel-btns {
-    width: 35%;
-    margin: 5px auto;
+    width: 50%;
+    margin: 5px 10rem;
   }
   .home .contact-content .folder .board .tm-text .tm-content {
     width: 100%;
+  }
+  .home .contact-content .folder .board .tm-text .tm-content P {
+    line-height: 1.85;
   }
 }
