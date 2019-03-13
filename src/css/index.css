@@ -338,17 +338,6 @@ footer .footerImg img {
   line-height: 1.25;
   color: white;
 }
-.home .cta-content .cta-text .cta-txt-wrapper .txt-input {
-  width: 42%;
-  margin-left: 18rem;
-  margin-top: 3rem;
-}
-.home .cta-content .cta-text .cta-txt-wrapper .txt-input input {
-  width: 25rem;
-  height: 5rem;
-  border-radius: 10px;
-  font-size: 3rem;
-}
 .home .cta-content .cta-text .cta-txt-wrapper .sign-up-btn {
   width: 50%;
   margin-left: 17rem;
@@ -371,8 +360,26 @@ footer .footerImg img {
   background-color: white;
   color: #b56357;
 }
+.home .slogan {
+  width: 50%;
+  height: 10rem;
+  margin: 1rem auto;
+}
+.home .slogan .slogan-txt {
+  height: 8rem;
+  margin: 5px auto;
+}
+.home .slogan .slogan-txt h1 {
+  text-align: center;
+  margin: 15px 0;
+  font-size: 6rem;
+  color: #b56357;
+  font-weight: 800;
+  letter-spacing: 1rem;
+  font-family: cursive;
+}
 .home .a-content {
-  margin-top: 10rem;
+  margin-top: 5rem;
   display: flex;
   justify-content: space-evenly;
 }
@@ -477,15 +484,21 @@ footer .footerImg img {
   margin: 2rem auto;
 }
 .home .contact-content .page-heading h2 {
+  font-size: 5rem;
   text-align: center;
   padding-top: 2rem;
+  width: 45%;
+  margin: 0 auto;
 }
 .home .contact-content .folder {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   align-content: center;
+  width: 73%;
+  margin: 1rem auto;
 }
 .home .contact-content .folder .tm {
+  margin-left: 5rem;
   display: flex;
   justify-content: space-evenly;
 }
@@ -501,10 +514,11 @@ footer .footerImg img {
   border-radius: 50%;
 }
 .home .contact-content .folder .board {
-  width: 30%;
+  height: 30rem;
+  width: 26%;
   flex-direction: column;
   align-content: center;
-  margin: 5rem auto;
+  margin: 5rem 5px;
 }
 .home .contact-content .folder .board .tm-text {
   text-align: center;
@@ -512,6 +526,11 @@ footer .footerImg img {
 }
 .home .contact-content .folder .board .tm-text h2 {
   padding-top: 10px;
+  font-size: 2.8rem;
+}
+.home .contact-content .folder .board .tm-text .panel-btns {
+  width: 49%;
+  margin: 6rem 10rem 3px;
 }
 .home .contact-content .folder .board .tm-text .panel-btns button {
   background-color: b56357;
@@ -534,7 +553,6 @@ footer .footerImg img {
 .home .contact-content .folder .board .tm-content {
   display: none;
   margin: 1rem;
-  padding: 1rem 10rem;
   text-align: center;
 }
 .home .contact-content .folder .board .toggle-on {
