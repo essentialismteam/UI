@@ -312,43 +312,50 @@ footer .footerImg img {
   flex-direction: column;
 }
 .home .cta-content {
+  width: 100%;
   display: flex;
   justify-content: space-between;
 }
-.home .cta-content .cta-img {
-  width: 60%;
-  height: auto;
+.home .cta-content .top-holder {
+  width: 100%;
+  height: 80%;
+  display: flex;
 }
-.home .cta-content .cta-text {
+.home .cta-content .top-holder .cta-img {
+  width: 60%;
+}
+.home .cta-content .top-holder .cta-img img {
+  height: 100%;
+  width: 100%;
+}
+.home .cta-content .top-holder .cta-text {
   width: 40%;
-  height: 657px;
   margin-top: 10rem;
   background-color: #7a9d96;
 }
-.home .cta-content .cta-text .cta-txt-wrapper {
+.home .cta-content .top-holder .cta-text .cta-txt-wrapper {
   background-color: #7a97a9;
-  width: 80%;
-  height: 80%;
-  margin: 7rem 1rem 2rem 9rem;
+  width: 70%;
+  height: 70%;
+  margin: 5rem auto;
   border-radius: 25px;
+  display: flex;
+  flex-direction: column;
 }
-.home .cta-content .cta-text .cta-txt-wrapper .txt-ele {
-  padding: 2rem 0rem 1rem;
-  margin-bottom: 1rem;
+.home .cta-content .top-holder .cta-text .cta-txt-wrapper .txt-btn-wrap {
+  margin: 12rem auto;
+  display: flex;
+  flex-direction: column;
+}
+.home .cta-content .top-holder .cta-text .cta-txt-wrapper .txt-btn-wrap .txt-ele {
+  margin: 1rem;
+  align-self: center;
   text-align: center;
   line-height: 1.25;
   color: white;
 }
-.home .cta-content .cta-text .cta-txt-wrapper .txt-ele h1 {
-  font-size: 7rem;
-  width: 100%;
-  height: 36rem;
-}
-.home .cta-content .cta-text .cta-txt-wrapper .sign-up-btn {
-  width: 60%;
-  margin: 1rem 12rem;
-}
-.home .cta-content .cta-text .cta-txt-wrapper .sign-up-btn button {
+.home .cta-content .top-holder .cta-text .cta-txt-wrapper .txt-btn-wrap .sign-up-btn button {
+  align-self: center;
   background-color: #b56357;
   color: white;
   margin: 10px 10px;
@@ -360,10 +367,9 @@ footer .footerImg img {
   border: 0;
   margin-right: 1.5rem;
   text-align: center;
-  width: 35rem;
   height: 6rem;
 }
-.home .cta-content .cta-text .cta-txt-wrapper .sign-up-btn button:hover {
+.home .cta-content .top-holder .cta-text .cta-txt-wrapper .txt-btn-wrap .sign-up-btn button:hover {
   background-color: white;
   color: #b56357;
 }
@@ -610,33 +616,37 @@ footer .footerImg img {
     width: 100%;
     margin: 5rem 0 0;
   }
-  .home .cta-content .cta-img {
+  .home .cta-content .top-holder {
+    height: 56%;
+    margin-top: 0;
+  }
+  .home .cta-content .top-holder .cta-img {
     display: none;
   }
-  .home .cta-content .cta-text {
+  .home .cta-content .top-holder .cta-text {
     width: 100%;
     height: 45rem;
     margin: 10rem 0 0;
   }
-  .home .cta-content .cta-text .cta-txt-wrapper {
-    margin: 4rem auto;
+  .home .cta-content .top-holder .cta-text .cta-txt-wrapper .txt-btn-wrap {
+    margin: 0;
   }
-  .home .cta-content .cta-text .cta-txt-wrapper .txt-ele {
+  .home .cta-content .top-holder .cta-text .cta-txt-wrapper .txt-btn-wrap .txt-ele {
     width: 95%;
     padding: 1rem 1rem;
-    height: 27rem;
-    margin: 1rem 1rem;
+    height: 22rem;
+    margin: 0 1rem;
   }
-  .home .cta-content .cta-text .cta-txt-wrapper .txt-ele h1 {
-    height: 25rem;
-    font-size: 5rem;
+  .home .cta-content .top-holder .cta-text .cta-txt-wrapper .txt-btn-wrap .txt-ele h1 {
+    height: 21rem;
   }
-  .home .cta-content .cta-text .cta-txt-wrapper .sign-up-btn {
-    width: 70%;
-    margin: 1rem 6rem;
+  .home .cta-content .top-holder .cta-text .cta-txt-wrapper .txt-btn-wrap .sign-up-btn {
+    width: 100%;
+    margin: 1rem;
   }
-  .home .cta-content .cta-text .cta-txt-wrapper .sign-up-btn button {
-    width: 26rem;
+  .home .cta-content .top-holder .cta-text .cta-txt-wrapper .txt-btn-wrap .sign-up-btn button {
+    width: 90%;
+    height: 5rem;
   }
   .home .slogan {
     width: 100%;
