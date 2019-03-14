@@ -650,7 +650,7 @@ footer .footerImg img {
   }
   .home .slogan {
     width: 100%;
-    margin-bottom: 0;
+    margin: 6rem 0 0 0;
   }
   .home .slogan .slogan-txt {
     padding-top: 2rem;
@@ -671,10 +671,8 @@ footer .footerImg img {
     margin: auto;
   }
   .home .a-content .a-content-img img {
-    width: 25rem;
-    height: 15rem;
-    margin: 5rem 12rem 1rem;
-    border: 3px solid white;
+    width: 63%;
+    height: 20rem;
   }
   .home .a-content .a-content-txt {
     width: 99%;
@@ -689,11 +687,11 @@ footer .footerImg img {
     align-content: center;
   }
   .home .reverse .reverse-img {
-    width: 25rem;
-    height: auto;
-    margin: auto;
-    border: 3px solid white;
-    border-radius: 15px;
+    width: 63%;
+    margin: 0 auto;
+  }
+  .home .reverse .reverse-img img {
+    width: 100%;
   }
   .home .reverse .reverse-txt {
     width: 100%;
@@ -713,8 +711,11 @@ footer .footerImg img {
     align-content: center;
   }
   .home .third-content .third-content-img {
-    width: 25rem;
+    width: 63%;
     margin: 0 auto;
+  }
+  .home .third-content .third-content-img img {
+    width: 100%;
   }
   .home .third-content .third-content-txt {
     width: 100%;
@@ -746,12 +747,14 @@ footer .footerImg img {
     margin: 0 11rem;
   }
   .home .cta-footer .ft-cta-wrapper .ft-btn {
-    width: 65%;
-    margin: 1 10rem;
+    width: 55%;
+    margin: 0 auto;
   }
   .home .cta-footer .ft-cta-wrapper .ft-btn .cta-ft-btn {
     height: 4rem;
     width: 25rem;
+    margin: 0;
+    padding: 0;
   }
   .home .contact-content {
     padding-top: 2rem;
